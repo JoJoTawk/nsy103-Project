@@ -243,7 +243,7 @@ taddresultatse_size = sizeof(t_addr);
 if(bind(my_socket,(struct sockaddr *)&my_addresultatse,sizeof(my_addresultatse)) != 0) 
 {
 		
-perror("liaison inutile !!");
+perror("liaison inutile !!!");
 		
 exit(1);
 	
@@ -253,7 +253,7 @@ exit(1);
 if(listen(my_socket,5) != 0) 
 {
 		
-perror("écoute inutile !!");
+perror("ecoute inutile !!");
 		
 exit(1);
 	
@@ -271,7 +271,7 @@ while(1)
 if((sock = accept(my_socket,(struct sockaddr *)&t_addr,&taddresultatse_size)) < 0) 
 {
 			
-perror("accepter sans succès !!");
+perror("accepter sans succes !!");
 			
 exit(1);
 		
@@ -312,7 +312,7 @@ clients[n].utilisateur[strlen(clients[n].utilisateur)] = '\0';
         
 strcpy(resultat, clients[n].utilisateur);
         
-strcat(resultat,"a été ajouté au groupe");
+strcat(resultat,"a ete ajoute au groupe");
         
 resultat[strlen(resultat)] = '\0';
         
